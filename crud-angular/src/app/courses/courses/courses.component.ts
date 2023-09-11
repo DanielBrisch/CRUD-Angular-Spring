@@ -15,6 +15,8 @@ export class CoursesComponent implements OnInit {
   displayedColumns = ['name', 'category'];
 
 
+
+
   constructor() {
   }
 
