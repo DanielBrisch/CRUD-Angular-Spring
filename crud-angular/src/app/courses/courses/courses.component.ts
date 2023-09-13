@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { Course } from '../model/course';
@@ -18,7 +18,6 @@ export class CoursesComponent implements OnInit {
 
   constructor(private  coursesService: CoursesService) {
     this.courses = this.coursesService.list();
-
   }
 
   ngOnInit(): void {

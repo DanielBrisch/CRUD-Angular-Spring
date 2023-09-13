@@ -3,6 +3,7 @@
     Cursos Disponiveis
   </mat-toolbar>
   <mat-card-content>
+    <div *ngIf="courses | async">
       <table mat-table [dataSource]="courses" class="mat-elevation-z8">
         <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef> Curso </th>
@@ -15,6 +16,7 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
+    </div>
     <mat-spinner></mat-spinner>
   </mat-card-content>
 </mat-card>
