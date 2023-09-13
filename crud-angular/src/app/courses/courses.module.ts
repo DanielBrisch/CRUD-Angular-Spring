@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
-import { AppMaterialModule } from '../shared/app-material/app-material.module';
+import { AppMaterialModule } from '../shared/app-material/AppMaterialModule';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { MatTableModule } from '@angular/material/table';
+import { AppComponent } from '../app.component';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { MatTableModule } from '@angular/material/table';
     CoursesRoutingModule,
     AppMaterialModule,
     HttpClientModule,
-    MatTableModule,
-  ]
+    MatTableModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class CoursesModule { }
