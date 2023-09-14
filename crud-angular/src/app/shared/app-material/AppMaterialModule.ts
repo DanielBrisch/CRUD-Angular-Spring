@@ -4,7 +4,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HttpClientModule } from '@angular/common/http';
-
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   exports: [
@@ -12,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
 })
 export class AppMaterialModule {

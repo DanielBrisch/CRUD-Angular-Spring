@@ -7,6 +7,8 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { MatTableModule } from '@angular/material/table';
 import { AppComponent } from '../app.component';
+import { SharedModule } from '../shared/shared.module';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { AppComponent } from '../app.component';
     CoursesRoutingModule,
     AppMaterialModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    SharedModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
