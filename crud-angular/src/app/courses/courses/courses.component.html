@@ -1,11 +1,9 @@
 <div style="padding-top: 20px;">
   <mat-card>
-    <div style="width: 926px; padding-left: 16px;">
+    <mat-card-content>
       <mat-toolbar color="primary">
         Cursos Disponiveis
       </mat-toolbar>
-    </div>
-    <mat-card-content>
       <div *ngIf="courses | async as courses; else loading">
         <table mat-table [dataSource]="courses" class="mat-elevation-z8">
           <ng-container matColumnDef="name">
