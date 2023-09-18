@@ -10,21 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.daniel.model.Course;
 import com.daniel.repository.CourseRepository;
 
+import lombok.AllArgsConstructor;
+
 @RestController
 @RequestMapping("/api/courses")
+@AllArgsConstructor
 public class CourseController {
 
-    @Autowired
     private final CourseRepository courseRepository;
-
-    public CourseController(CourseRepository courseRepository) {
-        this.courseRepository = courseRepository;
-    }
 
     @GetMapping
     public List<Course> list() {
         return courseRepository.findAll();
     }
-
 
 }
