@@ -6,6 +6,7 @@
       </mat-toolbar>
       <div *ngIf="courses | async as courses; else loading">
         <table mat-table [dataSource]="courses" class="mat-elevation-z8">
+
           <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef> Curso </th>
             <td mat-cell *matCellDef="let course"> {{ course.name }} </td>
@@ -27,4 +28,4 @@
       </ng-template>
     </mat-card-content>
   </mat-card>
-</div>
+  </div>
