@@ -1,5 +1,5 @@
 export interface Course {
-  _id: String;
+  id: String;
   name: String;
   category: String;
 }
