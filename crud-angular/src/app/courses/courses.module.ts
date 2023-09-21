@@ -9,11 +9,13 @@ import { MatTableModule } from '@angular/material/table';
 import { AppComponent } from '../app.component';
 import { SharedModule } from '../shared/shared.module';
 import { MatButtonModule } from '@angular/material/button';
+import { CourseFormComponent } from './course-form/course-form.component';
 
 
 @NgModule({
   declarations: [
-    CoursesComponent
+    CoursesComponent,
+    CourseFormComponent
   ],
   imports: [
     CommonModule,

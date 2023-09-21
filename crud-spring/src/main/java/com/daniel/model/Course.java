@@ -11,13 +11,14 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
+// @Table(name = "cursos")
 public class Course {
 
     @Id 
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "name", length = 200, nullable = false) // Corrigido para "name"
+    @Column(name = "name", length = 200, nullable = false)
     private String name;
 
     @Column(name = "category", length = 10, nullable = false)

@@ -1,4 +1,4 @@
-package controller;
+package com.daniel;
 
 import java.util.List;
 
@@ -22,4 +22,6 @@ public class CourseController {
     public List<Course> list() {
         return courseRepository.findAll();
     }
+
+    
 }
