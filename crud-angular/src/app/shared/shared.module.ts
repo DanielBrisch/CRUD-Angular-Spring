@@ -5,6 +5,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { CategoryPipe } from './pipes/category.pipe';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -15,13 +16,15 @@ import { CategoryPipe } from './pipes/category.pipe';
   imports: [
     CommonModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule
   ],
   exports: [
     ErrorDialogComponent,
     MatButtonModule,
     MatIconModule,
-    CategoryPipe
+    CategoryPipe,
+    MatFormFieldModule
   ]
 })
 export class SharedModule { }
