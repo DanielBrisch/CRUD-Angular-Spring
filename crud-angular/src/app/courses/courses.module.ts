@@ -13,6 +13,9 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { MatInputModule } from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 
 
@@ -31,7 +34,9 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],
