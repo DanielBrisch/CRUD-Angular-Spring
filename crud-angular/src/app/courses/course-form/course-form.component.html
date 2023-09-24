@@ -1,8 +1,8 @@
 <mat-card>
 
-    <mat-card-content>
+    <mat-card-content class="min-width">
       <mat-toolbar color="primary" style="margin-bottom: 10px;">Criar Curso</mat-toolbar>
-      <form [formGroup]="form">
+      <form [formGroup]="form" >
         <mat-form-field appearance="outline" class="full-width">
           <input matInput placeholder="Nome" formControlName="name">
         </mat-form-field>
