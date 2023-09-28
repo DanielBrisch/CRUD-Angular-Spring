@@ -1,0 +1,1 @@
+Desenvolvi um aplicativo CRUD utilizando Angular 2 e Spring para aprofundar minha expertise em desenvolvimento full stack. Nesta aplicação, criei um site de gerenciamento de cursos que permite a realização de operações como adição, exclusão, edição e muito mais.
