@@ -12,17 +12,16 @@ import { CourseFormComponent } from './course-form/course-form.component';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { MatInputModule } from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
-import {MatSelectModule} from '@angular/material/select';
+import { MatCardModule} from '@angular/material/card';
+import { MatSelectModule} from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
-
-
+import { CoursesListComponent } from './courses-list/courses-list.component';
 
 @NgModule({
   declarations: [
     CoursesComponent,
-    CourseFormComponent
+    CourseFormComponent,
+    CoursesListComponent
   ],
   imports: [
     CommonModule,

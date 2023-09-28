@@ -9,7 +9,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
-
 @NgModule({
   declarations: [
     ErrorDialogComponent,
@@ -28,7 +27,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatButtonModule,
     MatIconModule,
     CategoryPipe,
-    MatFormFieldModule
+    MatFormFieldModule,
   ]
 })
 export class SharedModule { }
