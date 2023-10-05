@@ -16,6 +16,7 @@ import { MatCardModule} from '@angular/material/card';
 import { MatSelectModule} from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CoursesListComponent } from './components/courses-list/courses-list.component';
+import { Router, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -35,9 +36,9 @@ import { CoursesListComponent } from './components/courses-list/courses-list.com
     MatInputModule,
     MatCardModule,
     MatSelectModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    RouterModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class CoursesModule { }

@@ -1,6 +1,7 @@
 package com.daniel;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -32,10 +33,10 @@ public class CourseController {
     
     @GetMapping("/{id}")
     public ResponseEntity<Course> findById(@PathVariable Long id) {
-        return courseRepository.findById(id)
-            .map(record => ResponseEntity.ok().body(record))
-            .orElse(ResponseEntity.notFound().build());
-    }
+    Optional<Course> course = courseRepository.findById(id);
+    return course.map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+}
 
     @ResponseStatus(code = HttpStatus.CREATED)
     @PostMapping

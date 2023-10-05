@@ -7,6 +7,7 @@ import { CourseFormComponent } from './container/course-form/course-form.compone
 const routes: Routes = [
   { path: '', component: CoursesComponent},
   { path: 'new', component: CourseFormComponent},
+  { path: 'edit/:id', component: CourseFormComponent}
 ];
 
 @NgModule({
