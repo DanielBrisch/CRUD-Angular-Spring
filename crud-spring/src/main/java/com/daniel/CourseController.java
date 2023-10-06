@@ -42,6 +42,10 @@ public class CourseController {
     @PostMapping
     public Course create(@RequestBody Course course ) {
         return courseRepository.save(course);
+
+
+
+        
     }
     
 }
